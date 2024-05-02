@@ -32,6 +32,7 @@ phases:
   build:
     commands:
       - echo "Running tests..."
+      - cd  /Swiggy_/
       - echo "Building Docker image..."
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
       - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:lateste" .
@@ -60,4 +61,5 @@ post_build:
 
 artifacts:
   files:
-    - appspec.yaml
+    - '**/*'
+    base-directory: ../Swiggy_

@@ -58,8 +58,7 @@ post_build:
   commands:
                                                                                                   
   
-
 artifacts:
   files:
     - '**/*'
-    base-directory: ../Swiggy_
+  base-directory: ../Swiggy_

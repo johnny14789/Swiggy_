@@ -5,7 +5,7 @@ env:
     DOCKER_REGISTRY_USERNAME: /cicd/docker-credentials/username
     DOCKER_REGISTRY_PASSWORD: /cicd/docker-credentials/password
     DOCKER_REGISTRY_URL: /cicd/docker-registry/url
-    SONAR_TOKEN: /cicd/sonar/sonar-token
+
 phases:
   install:
     runtime-versions:
@@ -53,7 +53,7 @@ phases:
 
 post_build:
   commands:
-  
+                                                                                                  
   
 
 artifacts:
